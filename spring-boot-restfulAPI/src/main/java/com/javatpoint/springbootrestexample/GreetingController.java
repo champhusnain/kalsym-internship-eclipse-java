@@ -21,4 +21,24 @@ public class GreetingController {
 	//returns the product list  
 	return greetings;  
 	}   
+	@RestController
+	public class TimestampRestController {
+
+	    @GetMapping("/timestamp")
+	    public TimestampResponse timestamp() {
+	        return new TimestampResponse(System.currentTimeMillis());
+	    }
+
+	    class TimestampResponse {
+	        private final long timestamp;
+
+	        TimestampResponse(long timestamp) {
+	            this.timestamp = timestamp;
+	        }
+
+	        public long getTimestamp() {
+	            return timestamp;
+	        }
+	    }
+	}
 }
