@@ -1,0 +1,131 @@
+2022-10-19 10:43:47,775 INFO c.m.StartApplication [main] Starting StartApplication on muhammad-husnain with PID 908964 (started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 10:43:47,783 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 10:43:47,784 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 10:43:49,327 ERROR o.a.c.u.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1004) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) [spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.mkyong.StartApplication.main(StartApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558) [spring-boot-maven-plugin-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	... 18 more
+2022-10-19 10:46:25,891 INFO c.m.StartApplication [main] Starting StartApplication on muhammad-husnain with PID 914897 (started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 10:46:25,898 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 10:46:25,900 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 10:46:27,693 INFO c.m.StartApplication [main] Started StartApplication in 2.359 seconds (JVM running for 5.891)
+2022-10-19 10:46:49,928 DEBUG c.m.HelloController [http-nio-8080-exec-1] Hello from Log4j 2 - num : [1, 2, 3, 4, 5]
+2022-10-19 10:46:49,929 DEBUG c.m.HelloController [http-nio-8080-exec-1] Hello from Log4j 2 - num : [1, 2, 3, 4, 5]
+2022-10-19 10:51:52,793 INFO c.m.StartApplication [main] Starting StartApplication v1.0 on muhammad-husnain with PID 917687 (/home/champ/Downloads/Internship Kalsym/new/logging-log4j2/target/logging-log4j2-1.0.jar started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 10:51:52,794 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 10:51:52,795 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 10:51:54,864 ERROR o.a.c.u.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1004) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+	at com.mkyong.StartApplication.main(StartApplication.java:10) ~[classes!/:1.0]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[logging-log4j2-1.0.jar:1.0]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[logging-log4j2-1.0.jar:1.0]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[logging-log4j2-1.0.jar:1.0]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[logging-log4j2-1.0.jar:1.0]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001) ~[tomcat-embed-core-9.0.14.jar!/:9.0.14]
+	... 20 more
+2022-10-19 10:52:11,911 INFO c.m.StartApplication [main] Starting StartApplication v1.0 on muhammad-husnain with PID 917881 (/home/champ/Downloads/Internship Kalsym/new/logging-log4j2/target/logging-log4j2-1.0.jar started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 10:52:11,911 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 10:52:11,912 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 10:52:13,915 INFO c.m.StartApplication [main] Started StartApplication in 2.412 seconds (JVM running for 4.073)
+2022-10-19 10:52:20,335 DEBUG c.m.HelloController [http-nio-8080-exec-1] Hello from Log4j 2 - num : [1, 2, 3, 4, 5]
+2022-10-19 10:52:20,336 DEBUG c.m.HelloController [http-nio-8080-exec-1] Hello from Log4j 2 - num : [1, 2, 3, 4, 5]
+2022-10-19 10:52:50,695 INFO c.m.StartApplication [main] Starting StartApplication on muhammad-husnain with PID 918246 (started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 10:52:50,700 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 10:52:50,701 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 10:52:51,425 INFO c.m.StartApplication [main] Started StartApplication in 1.008 seconds (JVM running for 2.563)
+2022-10-19 11:11:07,931 INFO c.m.StartApplication [main] Starting StartApplication on muhammad-husnain with PID 927107 (started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 11:11:07,948 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 11:11:07,950 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 11:11:10,306 ERROR o.a.c.u.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1004) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) [spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.mkyong.StartApplication.main(StartApplication.java:10) [classes/:?]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	... 14 more
+2022-10-19 11:11:39,584 INFO c.m.StartApplication [main] Starting StartApplication on muhammad-husnain with PID 927401 (started by champ in /home/champ/Downloads/Internship Kalsym/new/logging-log4j2)
+2022-10-19 11:11:39,595 DEBUG c.m.StartApplication [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-10-19 11:11:39,596 INFO c.m.StartApplication [main] No active profile set, falling back to default profiles: default
+2022-10-19 11:11:41,845 INFO c.m.StartApplication [main] Started StartApplication in 2.666 seconds (JVM running for 4.576)
+2022-10-19 11:11:45,977 DEBUG c.m.HelloController [http-nio-8080-exec-1] Hello from Log4j 2 - num : [1, 2, 3, 4, 5]
+2022-10-19 11:11:45,979 DEBUG c.m.HelloController [http-nio-8080-exec-1] Hello from Log4j 2 - num : [1, 2, 3, 4, 5]
